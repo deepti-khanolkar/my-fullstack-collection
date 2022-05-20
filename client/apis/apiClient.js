@@ -5,7 +5,7 @@ const baseUrl = '/api/v1/books'
 export function getBooks () {
   return request.get(baseUrl)
     .then((response) => {
-      return response.body
+      return response.body.entries
     })
     .catch(err => err.message)
 }

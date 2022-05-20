@@ -6,7 +6,7 @@ function Home () {
   console.log(books)
   return (
     <>
-      {books.map((book, i) => {
+      {books.map(book => {
         return (
           <div key={book.id}>
             {book.title}:{book.author}

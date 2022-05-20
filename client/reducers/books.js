@@ -1,6 +1,6 @@
 import { SET_BOOKS_SUCCESS } from '../actions'
 
-const initialState = [{ id: 1, title: 'Ready Player One', author: 'Ernest Cline' }]
+const initialState = [{ id: 0, title: 'The Famous Five', author: 'Enid Blyton' }]
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
