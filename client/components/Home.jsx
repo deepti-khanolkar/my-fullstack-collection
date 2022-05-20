@@ -1,9 +1,8 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 function Home () {
   const books = useSelector(state => state.books)
-  console.log(books)
   return (
     <>
       {books.map(book => {
