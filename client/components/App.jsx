@@ -17,14 +17,9 @@ function App () {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
-          {/* <Route path=":aspect" element={<Aspect />} />
-          <Route path="userprofile" element={<UserProfile />} /> */}
         </Route>
       </Routes>
     </>
-  // <section className="main">
-  //   {/* add your code here */}
-  // </section>
   )
 }
 
