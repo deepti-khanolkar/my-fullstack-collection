@@ -4,8 +4,15 @@ const baseUrl = '/api/v1/books'
 
 export function getBooks () {
   return request.get(baseUrl)
-    .then((response) => {
+    .then(response => {
       return response.body.entries
     })
-    .catch(err => err.message)
+    .catch(logError)
+}
+
+function logError (err) {
+  console.error(
+    'Error consuming the API:',
+    err.message
+  )
 }
